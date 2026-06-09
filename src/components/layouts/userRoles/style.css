@@ -1,0 +1,22 @@
+@import "tailwindcss";
+.uTable {
+    @apply border border-collapse;
+}
+.tableHeader {
+    @apply bg-yellow-100;
+}
+.uTable th, .uTable td {
+    @apply border border-gray-300 px-2 py-2;
+}
+.container{
+    @apply p-6;
+}
+.box{
+    @apply flex items-center justify-between mb-4;
+}
+.heading{
+    @apply text-[#3da89b] tracking-wide;
+}
+.btn{
+    @apply bg-[#3da89b] text-white px-4 py-2 rounded font-medium hover:bg-[#328f83] transition-colors shadow-md ;
+}

@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+.uTable {
+    @apply border border-collapse;
+}
+.tableHeader {
+    @apply bg-yellow-100;
+}
+.uTable th, .uTable td {
+    @apply border border-gray-300 px-2 py-2;
+}
+.container {
+    @apply max-w-4xl mx-auto p-6; 
+}
+.box {
+    @apply bg-white border border-gray-100 rounded-xl p-6 shadow-sm; 
+}
+.heading {
+    @apply text-2xl font-bold text-[#3da89b] tracking-wide;
+}
+.btn {
+    @apply bg-[#3da89b] text-white px-6 py-2.5 rounded font-medium hover:bg-[#328f83] transition-colors shadow-md;
+}
+.back {
+    @apply text-sm text-gray-400 cursor-pointer hover:text-gray-600 mb-1 transition-colors;
+}
+.top-bar {
+    @apply border-b border-gray-100 pb-4 mb-6; 
+}
+
+.form-layout-wrapper {
+    @apply flex flex-col gap-6 w-full;
+}
+
+.search-column {
+    @apply w-full;
+}
+
+.details-column {
+    @apply w-full border border-gray-100 rounded-lg p-6 bg-white shadow-xs;
+}
+
+.field-row {
+    @apply flex flex-col gap-1.5 mb-4;
+}
+
+.checkbox-list {
+    @apply flex flex-col gap-3 mt-1;
+}
+
+.checkbox-item {
+    @apply flex items-center gap-3 cursor-pointer text-gray-700 font-medium select-none hover:text-gray-900;
+}
+
+.details-column input[type="text"],
+.details-column input[type="email"] {
+    @apply w-full px-3.5 py-2.5 border border-gray-200 rounded-md outline-none text-gray-800 focus:border-[#45b1b4] focus:ring-1 focus:ring-[#45b1b4] transition-all;
+}
+
+.search-bar-container {
+    @apply flex items-center bg-gray-50 border border-gray-200 focus-within:border-[#45b1b4] focus-within:ring-1 focus-within:ring-[#45b1b4] rounded-lg p-1.5 w-full transition-all;
+}
+
+.search-bar-input {
+    @apply flex-1 bg-transparent border-none outline-none text-base text-gray-700 px-3 py-2 disabled:opacity-50;
+}
+
+.search-bar-btn {
+    @apply bg-[#45b1b4] text-white font-medium px-6 py-2 rounded-md text-base transition-colors duration-200 disabled:bg-cyan-200;
+}
+
+.search-bar-btn:hover {
+    @apply bg-[#3aa2a5];
+}
